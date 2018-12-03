@@ -31,9 +31,11 @@ temperature_unit fahrenheit
 short_units yes
 
 TEXT
-${font Arial:size=20}${color Tan1}RPI${color Ivory}LINUX
+${font Arial:size=20}${color Tan1}Debian ${color Ivory}Linux
+${font Arial:size=12}${color Gray}Powered by RPILinux
+${font}
 
-${voffset -90}
+${voffset -50}
 ${color DimGray}
 ${font}
 ${font Arial:bold:size=10}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
@@ -54,7 +56,7 @@ CPU4  ${cpu cpu4}% ${cpubar cpu4}
 $endif${cpugraph DimGray DarkSlateGray} $color
 
 ${font Arial:bold:size=10}${color Tan1}MEMORY ${color DarkSlateGray}${hr 2}
-$font${color DimGray}MEM $alignc $mem / $memmax $alignr $memperc%
+$font${color DimGray}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
 $font${color DimGray}SWAP $alignc $swap / $swapmax $alignr $swapperc%
 $swapbar
